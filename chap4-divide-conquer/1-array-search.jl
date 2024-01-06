@@ -22,9 +22,10 @@ function binarySearch(list::Vector{T}, item::T)::Integer where {T<:Number}
 	lo, hi = 1, length(list)
 	while lo < hi
 		guess = fld(hi + lo, 2)
-		if list[guess] == item
+		tmp = list[guess]
+		if tmp == item
 			return guess
-		elseif list[guess] > item
+		elseif tmp > item
 			hi = guess - 1
 		else
 			lo = guess + 1

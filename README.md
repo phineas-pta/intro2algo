@@ -17,5 +17,5 @@ chapters: (my personal numbering)
 - [x] chap 2: optimization with caching
 - [x] chap 3: recursion
 - [x] chap 4: divide &amp; conquer
-- [ ] chap 5: greedy algorithms
-- [ ] chap 6: dynamic algorithms
+- [x] chap 5: greedy algorithms
+- [x] chap 6: dynamic algorithms
