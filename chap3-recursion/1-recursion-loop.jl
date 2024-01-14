@@ -1,7 +1,7 @@
 #!/usr/bin/env -S julia --color=yes --threads=auto --startup-file=no
 
 # https://replit.com/@bgando/recursive-loop-simple
-function loopNTimes(n::Integer)
+function loopNTimes(n::Integer)::Nothing
 	println("n = $n")
 	if n ≤ 1  # base case
 		return nothing
@@ -35,9 +35,9 @@ end
 @assert computeFactorialRecurse(5) == 120
 
 # https://replit.com/@bgando/recursion-to-loop-example
-function logNumbersRecursively(start::Integer, endd::Integer)
+function logNumbersRecursively(start::Integer, endd::Integer)::Nothing
 	println("recursively looping from $start until $endd")
-	function recurse(i::Integer)
+	function recurse(i::Integer)::Nothing
 		println("hitting index $i")
 		if i < endd
 			recurse(i + 1)
